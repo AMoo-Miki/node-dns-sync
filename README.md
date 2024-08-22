@@ -1,12 +1,18 @@
 node-dns-sync
 =============
 
-[![Build Status](https://travis-ci.org/skoranga/node-dns-sync.png)](https://travis-ci.org/skoranga/node-dns-sync)
-
 Sync/Blocking DNS resolve. Main usecase is in node server startup.
 
 How to Use
 -------
+
+If coming from `dns-sync`, replace the entry in the package dependencies:
+```json5
+  "dependencies": {
+    "dns-sync": "npm:@amoo-miki/dns-sync@~0.2",
+    ...
+  }
+```
 
 ```javascript
 var dnsSync = require('dns-sync');
